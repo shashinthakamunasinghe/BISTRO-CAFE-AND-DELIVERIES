@@ -1,0 +1,157 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.content{
+    padding-left: 130px;
+}
+
+.box{
+    width: 40%;
+    height: 200px;
+    border: 2px solid #cda45e;
+    box-sizing: border-box;
+    float: left;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.box:hover{
+    background-color: #cda45e;
+    color: rgba(0, 0, 0, 0.61);
+    border-color: white;
+}
+
+.top-nav{
+    background-color: rgba(0, 0, 0, 0.445);
+    height: 60px;
+    text-align: center;        
+    margin-top: -30px;
+
+}
+
+.icon{
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.box:hover .icon{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 10px;
+}
+
+.title{
+    color: #cda45e;
+}
+
+.account{
+    width: 25px;
+    border-radius: 15px;
+    padding: 2px;
+    
+}
+
+
+.navi ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navi a{
+    padding: 15px;
+    display: block;
+    text-align: center;
+    height: 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    
+}
+
+.navi{
+    /*padding-left: 400px;*/
+    padding-bottom: 10px;
+
+}
+
+.navi a:hover .account{
+    background-color: white;
+}
+
+.navi a:hover{
+    background-color: #cda45e;
+    color: white;
+    border-left: 1px solid white;
+}
+
+.navi a:active{
+    border-bottom: 1px solid white;
+    background-color: #cda45e;
+    border-width: 50%;
+}
+
+.navi li{
+    float: right;
+}
+
+.navi li:nth-child(){
+    background-color: #cda45e;
+}
+
+table{
+    /*background-color: rgb(255, 255, 255);*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+    border: 5px solid black;
+}
+
+td, th{
+    padding: 15px;
+    border: 2px solid black;
+}
+
+tr th{
+    color: #cda45e;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #cda45e;
+    color: black;
+}
+
+tr:nth-child(odd){
+    background-color: #1f1f1f;
+    color: rgb(255, 255, 255);
+}
+
+tr{
+    height: 70px;
+    border: 2px solid black;
+}

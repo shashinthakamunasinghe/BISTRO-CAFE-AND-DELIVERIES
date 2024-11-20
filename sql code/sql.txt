@@ -1,0 +1,42 @@
+1.restaurant database create.
+create database restaurant;
+
+2.contact table 
+use restaurant;
+CREATE TABLE contact (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    subject VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL,
+    submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+3.reservations table create
+use restaurant;
+
+CREATE TABLE reservations (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  phone VARCHAR(15) NOT NULL,
+  date DATE NOT NULL,
+  time TIME NOT NULL,
+  people INT NOT NULL,
+  message TEXT,
+  submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+3.delivery_details table
+USE restaurant;
+
+CREATE TABLE delivery_details (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    address VARCHAR(100) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

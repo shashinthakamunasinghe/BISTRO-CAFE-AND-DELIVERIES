@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form oninput="validateForm()" onsubmit="return handleSubmit(event)">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" id="name" placeholder="your name" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" id="cardNumber" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="month" id="expMonth" placeholder="month" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Total Amount :</span>
+                        <input type="text" id="totalAmount" placeholder="RS:XXX.XX" required>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="pay now" class="submit-btn" id="submitBtn" disabled>
+        <div class="popup" id="popup">
+            <img src="images/Green-check-mark-icon-on-transparent-background-PNG.png">
+            <h2>Thank You!</h2>
+            <p>Your Payment is successful. Thanks!</p>
+            <a href="http://localhost/bistro%20cafe%20and%20deliveries/"><button type="button" onclick="closePopup()">OK</button></a>
+        </div>
+
+    </form>
+
+</div>   
+
+<script src="js/popup.js"></script>
+    
+</body>
+</html>

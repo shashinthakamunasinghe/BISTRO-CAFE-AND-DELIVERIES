@@ -1,0 +1,37 @@
+input [type="date"] {
+    color: #ffffff;
+    font-family: "roboto mono",monospace;
+
+  }
+  ::-webkit-calender-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+
+  }
+
+  .book-a-table .php-email-form button .back a:hover {
+    background: #d38371;
+  }
+  .book-a-table .php-email-form .back a {
+    background: #cda45e;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  }
+  .book-a-table .php-email-form button[type="submit"] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  
+  .book-a-table .php-email-form button[type="submit"]:hover {
+    background: #d3ba71;
+  }

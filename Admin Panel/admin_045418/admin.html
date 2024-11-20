@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantly-Admin</title>
+    <!--<meta http-equiv="refresh" content="10">-->
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="padding-left: 100px; padding-right: 100px;">
+        <div style="width: 50%; float: left; text-align: left;">
+            <h1>Bistro Cafe & Delivers</h1>
+        </div>
+        <div style="width: 50%; float: right;">
+            <nav class="navi">
+                <ul>
+                    <li><a href="account.php"><img src="Icons/account.svg" class="account" title="Log Out"></a></li>
+                    <li><a href="index.php">Website</a></li>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="orders.php" target="_blank">Orders</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
+                    <li><a href="messages.php">Messages</a></li>                
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="datetime" style="text-align: center; font-size: 14px;">
+        <script>
+            function updateDateTime() {
+              let now = new Date();
+        
+              let date = now.toLocaleDateString('en-US');
+              let time = now.toLocaleTimeString('en-US');
+        
+              document.getElementById('datetime').innerHTML = `${date} ${time}`;
+            }
+        
+            setInterval(updateDateTime, 1000);
+        
+            updateDateTime();
+        </script>
+    </div>
+    <br>
+    <div class="top-nav">
+        <h1>Admin <span class="title">Dashboard</h1></span>
+    </div>
+    <div class="content">
+        <a href="orders.php">
+            <div class="box">
+            <img src="Icons/order.svg" class="icon">
+            <h2>Orders</h2>
+            </div>
+        </a>
+        <a href="reservation.php">
+            <div class="box">
+            <img src="Icons/reservation.svg" class="icon">
+            <h2>Reservations</h2>
+            </div>
+        </a>
+        <a href="messages.php">
+            <div class="box">
+            <img src="Icons/message.svg" class="icon">
+            <h2>Messages</h2>
+            </div>
+        </a>
+        <a href="prices.php">
+            <div class="box">
+            <img src="Icons/price.svg" class="icon">
+            <h2>Food Prices</h2>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

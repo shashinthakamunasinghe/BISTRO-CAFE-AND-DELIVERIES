@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Item Selector</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="selectorStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo mr-auto">Bistro Cafe & Deliveries</h1>
+            <div class="icon">
+                <div class="i"><a href="Cart/cart.html"><img src="img/profile/cart.png" width="30px"></a></div>
+                <!--<div class="j"><a href="#profile"><img src="img/profile/profile.png" width="30px"></a></div>-->
+            </div>
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-food">Food</li>
+                        <li data-filter=".filter-salads">Salads</li>
+                        <li data-filter=".filter-dessert">Dessert</li>
+                        <li data-filter=".filter-drinks">Drinks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+                <!--<div class="col-lg-6 menu-item filter-food">
+                    <div class="item-check">
+                        <input type="checkbox" id="item1" data-name="Pork Fried Rice" data-price="$1200.00">
+                    </div>
+                    <img src="img/menu/Thai Fried Rice.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Pork Fried Rice</a><span>Rs.1200.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Pork Fried Rice is a savory, stir-fried rice recipe that is loaded with tender pork, fluffy rice, vegetables and scrambled eggs,making it a balanced and satisfying meal
+                    </div>
+                </div>-->
+                <div class="col-lg-6 menu-item filter-drinks">
+                    <div class="item-check">
+                        <input type="checkbox" id="item1" data-name="Chocolate Coffee Date Shake" data-price="$800.00">
+                    </div>
+                    <div>
+                    <img src="img/menu/Tahini Chocolate Coffee Date Shake _ Ambitious Kitchen.jpg" class="menu-img" alt="">
+                    </div>
+                    <div class="menu-content">
+                        <a href="#">Chocolate Coffee Date Shake</a><span>Rs.800.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                       Thick & delicious tahini coffee date shake made with creamy coconut milk and naturally sweetened with dates.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-dessert">
+                    <div class="item-check">
+                        <input type="checkbox" id="item2" data-name="Chocolate Cake With Strawberry Filling" data-price="$1100.00">
+                    </div>
+                    <img src="img/menu/Chocolate Strawberry Cake.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Chocolate Cake With Strawberry Filling</a><span>Rs.1100.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        The easiest two-layered chocolate strawberry cake topped with chocolate ganache and fresh strawberries.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <div class="item-check">
+                        <input type="checkbox" id="item3" data-name="Corn Tomato Avocado Salad" data-price="$400.00">
+                    </div>
+                    <img src="img/menu/Corn Tomato Avocado Salad.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Corn Tomato Avocado Salad</a><span>Rs.400.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Corn Tomato Avocado Salad is an easy, fresh and flavorful summer salad that you’ll want to make all throughout the warm months. It’s a great way to use up leftover corn you may have grilled.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <div class="item-check">
+                        <input type="checkbox" id="item4" data-name="Hawaiian Chicken Salad" data-price="$600.00">
+                    </div>
+                    <img src="img/menu/Hawaiian Chicken Salad_ Gluten-Free & Whole Health Flexi-Plan.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Hawaiian Chicken Salad</a><span>Rs.600.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Gluten-Free Hawaiian Chicken Salad. This meal not only tantalizes your taste buds with its tropical flavors but also aligns perfectly with the Whole Health Flexi-Plan diet, offering a multitude of health benefits.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-dessert">
+                    <div class="item-check">
+                        <input type="checkbox" id="item5" data-name="Blueberry Cream Cheese Coffee Cake" data-price="$1100.00">
+                    </div>
+                    <img src="img/menu/Blueberry Cream Cheese Coffee Cake - That Oven Feelin.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Blueberry Cream Cheese Coffee Cake</a><span>Rs.1100.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                       Dive into a delightful blend of blueberries, cream cheese, and a buttery streusel. This coffee cake promises a moist and flavorful morning indulgence. Simple ingredients, extravagant taste!
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-drinks">
+                    <div class="item-check">
+                        <input type="checkbox" id="item6" data-name="Mint Chocolate Mousse" data-price="$800.00">
+                    </div>
+                    <img src="img/menu/24 Decadent Mousse Desserts That Are Deceivingly Easy.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Mint Chocolate Mousse</a><span>Rs.800.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        This mint chocolate mousse is topped with peppermint whipped cream and crushed up mint oreo’s! It is the ultimate dessert for chocolate and mint lovers.The mousse is super silky, rich and creamy!
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-food">
+                    <div class="item-check">
+                        <input type="checkbox" id="item7" data-name="Chicken Fried Rice" data-price="$1300.00">
+                    </div>
+                    <img src="img/menu/15 Spicy Chicken and Rice Recipes to Spice Up Your Week.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Chicken Fried Rice
+                            </a><span>Rs.1300.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Chicken Fried Rice is a savory, stir-fried rice recipe that is loaded with
+                            
+                            tender pork, fluffy rice, vegetables and scrambled eggs,making 
+                            
+                            it a balanced and satisfying meal
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-food">
+                    <div class="item-check">
+                        <input type="checkbox" id="item8" data-name="beef Kottu" data-price="$1500.00">
+                    </div>
+                    <img src="img/menu/Sri Lankan Chicken Kottu Roti Recipe _ Food Voyageur.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Beef Kottu 
+                            </a><span>Rs.1500.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Beef Kottu is a savory, stir-fried rice recipe that is loaded with
+                            
+                            tender pork, fluffy rice, vegetables and scrambled eggs,making 
+                            
+                            it a balanced and satisfying meal
+                    </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-food">
+                    <div class="item-check">
+                        <input type="checkbox" id="item9" data-name="pork Fried Rice" data-price="$1200.00">
+                    </div>
+                    <img src="img/menu/Thai Fried Rice.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">pork Fried Rice
+                            </a><span>Rs.1200.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Pork Fried Rice is a savory, stir-fried rice recipe that is loaded with tender pork, fluffy rice, vegetables and scrambled eggs,making it a balanced and satisfying meal
+                    </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-food">
+                    <div class="item-check">
+                        <input type="checkbox" id="item10" data-name="mutton Fried Rice" data-price="$1600.00">
+                    </div>
+                    <img src="img/menu/15 Spicy Chicken and Rice Recipes to Spice Up Your Week.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">mutton Fried Rice
+                            </a><span>Rs.1600.00</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        mutton Fried Rice is a savory, stir-fried rice recipe that is loaded with tender mutton, fluffy rice, vegetables and scrambled eggs,making it a balanced and satisfying meal!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="actions">
+            <a href="http://localhost/BISTRO%20CAFE%20AND%20DELIVERIES/index.html" class="btn-back">Back</a>
+            <a href="Cart/cart.html" class="btn-add-to-cart" onclick="addToCart()">Add to cart</a>
+        </div>
+    </section> <!-- End Menu Section -->
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="selector.js"></script>
+
+</body>
+
+</html>
