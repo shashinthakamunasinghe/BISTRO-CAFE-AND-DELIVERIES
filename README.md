@@ -22,7 +22,7 @@ A full-stack web application built to simplify and digitize restaurant operation
 
 - **Frontend**: HTML, CSS, Java Script
 - **Backend**: PHP, MySQL
-- **UI/UX**: Bootstrap 
+- **UI/UX**: Bootstrap 5
 
 ---
 
@@ -31,5 +31,4 @@ A full-stack web application built to simplify and digitize restaurant operation
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/restaurant-management-website.git
-cd restaurant-management-website
+git clone https://github.com/shashinthakamunasinghe/BISTRO-CAFE-AND-DELIVERIES.git
