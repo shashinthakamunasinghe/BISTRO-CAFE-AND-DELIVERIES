@@ -26,6 +26,12 @@ A full-stack web application built to simplify and digitize restaurant operation
 
 ---
 
+## 🙌 Contributors
+
+- [@shashinthakamunasinghe](https://github.com/shashinthakamunasinghe) – 👨‍💻 
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
